@@ -1,0 +1,13 @@
+<h1 align="center">Результат</h1>
+<table>
+	<tr>
+		<th>Десятичная форма</th>
+		<th>Двоичная форма</th>
+	</tr>
+	<% @hash.each do |num, bin| %>
+		<tr>
+			<td><%= num %></td>
+			<td><%= bin %></td>
+		</tr>
+	<% end %>
+</table>

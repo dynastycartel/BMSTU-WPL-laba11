@@ -1,0 +1,19 @@
+<% if @check_res.nil? %>
+	<p>Нет в базе данных</p>
+<% else %>
+	<p>Есть в базе данных</p>
+	<p>Строка из базы данных:</p>
+	<p>Введенное число: <%= @check_par %></p>
+	<table>
+		<tr>
+			<th>Десятичная форма</th>
+			<th>Двоичная форма</th>
+		</tr>
+		<% @check_res.each do |num, bin| %>
+			<tr>
+				<td><%= num %></td>
+				<td><%= bin %></td>
+			</tr>
+		<% end %>
+	</table>
+<% end %>

@@ -1,0 +1,8 @@
+<h1 align="center">Проверка на существование в базе данных</h1>
+<%= form_with url: "db_check_output", method: :get do |form| %>
+	<p>
+		<%= form.label "Введите число:" %>
+		<%= form.number_field :check_num %>
+	</p>
+	<p><%= form.submit("Проверить") %></p>
+<% end %>
